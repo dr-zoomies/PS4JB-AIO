@@ -11,8 +11,9 @@ function ensureHostConsole() {
         out.id = "out";
         out.setAttribute(
             "style",
-            "position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;" +
-                "overflow:hidden;opacity:0;pointer-events:none;"
+            "position:fixed;left:5%;top:15%;width:90%;height:65%;" +
+        "overflow:auto;background:#000;color:#00ff00;padding:15px;" +
+        "font-size:16px;white-space:pre-wrap;z-index:9999;"
         );
         (document.body || document.documentElement).appendChild(out);
     }
@@ -21,8 +22,9 @@ function ensureHostConsole() {
         st.id = "state";
         st.setAttribute(
             "style",
-            "position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;" +
-                "overflow:hidden;opacity:0;pointer-events:none;"
+            "position:fixed;left:5%;top:82%;width:90%;" +
+        "background:#000;color:#00ff00;padding:10px;" +
+        "font-size:16px;z-index:10000;"
         );
         (document.body || document.documentElement).appendChild(st);
     }
