@@ -41,8 +41,11 @@ function getLogConsole() {
     el.id = "console";
     el.setAttribute(
       "style",
-      "position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;" +
-        "overflow:hidden;opacity:0;pointer-events:none;"
+      "position:fixed;left:5%;top:15%;width:90%;height:65%;" +
+    "overflow:auto;box-sizing:border-box;" +
+    "background:rgba(0,0,0,0.88);color:#00ff66;padding:15px;" +
+    "border:1px solid #00ff66;font-family:monospace;" +
+    "font-size:16px;line-height:1.35;white-space:pre-wrap;z-index:9999;"
     );
     if (document.body) {
       document.body.appendChild(el);
