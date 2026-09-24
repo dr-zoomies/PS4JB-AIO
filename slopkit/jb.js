@@ -85,7 +85,7 @@ function terse(s) {
   return s;
 }
 
-const SHOW_LOG = params.get("log") === "1";
+const SHOW_LOG = true;
 if (SHOW_LOG && document.body) document.body.className = "log";
 function finishUI(ok) {
   if (ok) hostOk();
